@@ -10,7 +10,7 @@ body {
     background-image: url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #000000;
     padding: 150px 0;
   }
   
@@ -23,4 +23,31 @@ body {
   }
   
   /* Add more custom styling as needed */
+  /* This is just an example, adjust the animation properties as needed */
+  .btn-bounce {
+    animation: bounce 0.5s infinite alternate;
+  }
   
+/* CSS Keyframes Rule */
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+/* Add this at the end of your existing CSS */
+.btn-scale {
+  animation: scale 0.5s ease-in-out alternate infinite;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
